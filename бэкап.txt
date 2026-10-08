@@ -1,0 +1,9 @@
+linux:
+сделать бэкап: pg_dump --host=localhost --username=postgres --password --file=bd_kniga_receptov --dbname=kniga_receptov --create
+
+восстановить копию: psql --host=localhost --username=postgres --password --file=bd_kniga_receptov --dbname=kniga_receptov
+
+win10:
+сделать копию: "C:\Program Files\PostgreSQL\17\bin\pg_dump.exe" -h localhost -U postgres -W -f "C:\xampp\htdocs\bd\prokat.dump" -d prokat_avtomobilej --create
+
+восстановить копию: "C:\Program Files\PostgreSQL\17\bin\psql.exe" -h localhost -U postgres -d postgres -f "C:\xampp\htdocs\bd\prokat.dump"
